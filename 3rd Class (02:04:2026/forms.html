@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Forms</title>
+</head>
+
+<body>
+  <h1>Basic Forms</h1>
+
+  <h2>1) Registration</h2>
+  <form action="#" method="post">
+    <label for="fullName">Full name</label>
+    <input id="fullName" name="fullName" type="text" required />
+    <br /><br />
+
+    <label for="regEmail">Email</label>
+    <input id="regEmail" name="regEmail" type="email" required />
+    <br /><br />
+
+    <label for="regPassword">Password</label>
+    <input id="regPassword" name="regPassword" type="password" minlength="6" required />
+    <br /><br />
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <hr />
+
+  <h2>2) Profile Info</h2>
+  <form action="#" method="post">
+    <label for="age">Age</label>
+    <input id="age" name="age" type="number" min="0" max="120" />
+    <br /><br />
+
+    <label for="birthDate">Birth date</label>
+    <input id="birthDate" name="birthDate" type="date" />
+    <br /><br />
+
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" />
+    <br /><br />
+
+    <label for="website">Website</label>
+    <input id="website" name="website" type="url" />
+    <br /><br />
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <hr />
+
+  <h2>3) Preferences</h2>
+  <form action="#" method="post">
+    <p><strong>Choose your options:</strong></p>
+
+    <label>
+      <input type="checkbox" name="newsletter" value="yes" />
+      Newsletter
+    </label>
+    <br />
+
+    <label>
+      <input type="checkbox" name="updates" value="yes" />
+      Updates
+    </label>
+    <br /><br />
+
+    <label>
+      <input type="radio" name="gender" value="male" />
+      Male
+    </label>
+    <br />
+
+    <label>
+      <input type="radio" name="gender" value="female" />
+      Female
+    </label>
+    <br /><br />
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="us">United States</option>
+      <option value="bd">Bangladesh</option>
+      <option value="in">India</option>
+    </select>
+    <br /><br />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+    <br /><br />
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>

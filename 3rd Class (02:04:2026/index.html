@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Beginner Tag Showcase</title>
+    <meta name="description" content="Common HTML tags for beginners" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Tag Showcase</h1>
+        <p class="muted">
+            This page is built to show lots of HTML tags beginners should recognize.
+        </p>
+
+        <nav aria-label="Page sections">
+            <a href="#text">Text & inline</a>
+            <a href="#media">Media</a>
+            <a href="#lists">Lists</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#extras">Extras</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layout">
+            <section id="text">
+                <h2>Text & inline tags</h2>
+
+                <p>
+                    Here is <strong>bold</strong>, <em>emphasis</em>, and
+                    <u>underlined</u> text.
+                </p>
+
+                <p>
+                    Inline code: <code>const x = 10;</code> and a keyboard key:
+                    <kbd>Ctrl</kbd> + <kbd>C</kbd>.
+                </p>
+
+                <p>
+                    More inline tags: <b>bold</b>, <i>italic</i>, <s>strikethrough</s>,
+                    <del>deleted text</del>, <ins>inserted text</ins>,
+                    <cite>citation</cite>, <samp>sample output</samp>, and
+                    <var>a variable</var>.
+                </p>
+
+                <p>
+                    Smaller text: <small>small</small>,
+                    marked text: <mark>highlight</mark>,
+                    and superscript/subscript:
+                    E = mc<sup>2</sup>, H<sub>2</sub>O.
+                </p>
+
+                <p>
+                    Abbreviation:
+                    <abbr title="HyperText Markup Language">HTML</abbr>.
+                </p>
+
+                <address>
+                    123 Beginner Street<br />
+                    Web City, WC 10001
+                </address>
+
+                <p>
+                    Quote:
+                    <q>Learning HTML is fun.</q>
+                </p>
+
+                <blockquote>
+                    This is a block quote. It takes its own block, like paragraphs.
+                </blockquote>
+
+                <p>
+                    A time element example:
+                    <time datetime="2026-04-02">April 2, 2026</time>.
+                </p>
+
+                <hr />
+
+                <details>
+                    <summary>Click to expand (details/summary)</summary>
+                    <p>
+                        This content is hidden until you click the summary.
+                    </p>
+                </details>
+
+                <p>
+                    A forced line break: hello<br />
+                    world.
+                </p>
+
+                <p>
+                    A word break opportunity: super<wbr />longword.
+                </p>
+            </section>
+
+            <aside>
+                <h2>Semantic layout tags</h2>
+                <article>
+                    <h3>Article</h3>
+                    <p>
+                        This is inside an <code>article</code> tag.
+                    </p>
+                </article>
+                <section>
+                    <h3>Section</h3>
+                    <p>
+                        This is inside a <code>section</code>.
+                    </p>
+                </section>
+            </aside>
+        </div>
+
+        <section id="media">
+            <h2>Media tags</h2>
+
+            <figure>
+                <img src="https://via.placeholder.com/600x200.png?text=Placeholder+Image" alt="Placeholder example"
+                    width="600" height="200" />
+                <figcaption>A caption for the image (figure/figcaption).</figcaption>
+            </figure>
+
+            <p>
+                Video (example uses a public demo mp4; if it doesn't load, replace the URL):
+            </p>
+            <video controls width="600">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4" />
+                Your browser does not support the <code>video</code> tag.
+            </video>
+
+            <p>
+                Audio:
+            </p>
+            <audio controls>
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                    type="audio/mpeg" />
+                Your browser does not support the <code>audio</code> tag.
+            </audio>
+
+            <p>
+                Canvas (drawn with JS in the <code>script</code> tag below):
+            </p>
+            <canvas id="myCanvas" width="420" height="140" style="border: 1px solid #ddd;"></canvas>
+
+            <p>
+                iFrame (embedded webpage):
+            </p>
+            <iframe title="Example iframe" src="https://example.com/" width="100%" height="220" loading="lazy"></iframe>
+
+            <p>
+                Download link example:
+                <a href="https://example.com/" download>Download (example)</a>
+            </p>
+        </section>
+
+        <section id="lists">
+            <h2>Lists & description lists</h2>
+
+            <h3>Unordered list</h3>
+            <ul>
+                <li>List item one</li>
+                <li>
+                    List item two
+                    <ul>
+                        <li>Nested item</li>
+                        <li>Nested item</li>
+                    </ul>
+                </li>
+                <li>List item three</li>
+            </ul>
+
+            <h3>Ordered list</h3>
+            <ol>
+                <li>Step one</li>
+                <li>Step two</li>
+                <li>Step three</li>
+            </ol>
+
+            <h3>Description list</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+
+            <p>
+                Link example:
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">
+                    MDN Web Docs
+                </a>
+            </p>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <table>
+                <caption>Example table (caption/thead/tbody/tfoot)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Skill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali</td>
+                        <td>Student</td>
+                        <td>
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sam</td>
+                        <td>Student</td>
+                        <td>
+                            <span class="pill">HTML</span>
+                            <span class="pill">Forms</span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="muted">End of table</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="#" method="post" onsubmit="event.preventDefault(); alert('Form submitted (demo).');">
+                <fieldset>
+                    <legend>Basic info</legend>
+
+                    <label for="fullname">Full name</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="e.g., Alex" required />
+
+                    <div class="row">
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="name@example.com" required />
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" placeholder="••••••••" required
+                                minlength="6" />
+                        </div>
+                    </div>
+
+                    <label for="age">Age</label>
+                    <input id="age" name="age" type="number" min="0" max="120" step="1" value="18" />
+
+                    <label for="dob">Date of birth</label>
+                    <input id="dob" name="dob" type="date" />
+
+                    <label for="color">Choose a color (select)</label>
+                    <select id="color" name="color">
+                        <optgroup label="Warm colors">
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                        </optgroup>
+                        <optgroup label="Cool colors">
+                            <option value="blue" selected>Blue</option>
+                            <option value="green">Green</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="city">Choose a city (datalist)</label>
+                    <input id="city" name="city" list="city-list" placeholder="Type then select" />
+                    <datalist id="city-list">
+                        <option value="New York"></option>
+                        <option value="London"></option>
+                        <option value="Tokyo"></option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label>Interests (checkbox)</label>
+                    <label><input type="checkbox" name="interest" value="html" checked /> HTML</label>
+                    <label><input type="checkbox" name="interest" value="css" /> CSS</label>
+                    <label><input type="checkbox" name="interest" value="forms" /> Forms</label>
+
+                    <label>Level (radio)</label>
+                    <label><input type="radio" name="level" value="beginner" checked /> Beginner</label>
+                    <label><input type="radio" name="level" value="intermediate" /> Intermediate</label>
+
+                    <label for="satisfaction">Satisfaction (range)</label>
+                    <input id="satisfaction" name="satisfaction" type="range" min="0" max="100" value="60" />
+                    <p>
+                        Current value:
+                        <output id="rangeOutput" name="rangeOutput">60</output>
+                    </p>
+
+                    <label for="file">Upload a file (file)</label>
+                    <input id="file" name="file" type="file" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <label for="message">Message (textarea)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write something..." required></textarea>
+
+                    <p>
+                        Progress example:
+                        <progress value="45" max="100"></progress>
+                    </p>
+
+                    <p>
+                        Meter example:
+                        <meter value="7" min="0" max="10" low="3" high="8" optimum="9"></meter>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" onclick="toggleNote()">Show note</button>
+
+                <noscript>
+                    JavaScript is disabled. Some demo features (canvas drawing, output updates) may not work.
+                </noscript>
+            </form>
+
+            <section id="note" aria-live="polite">
+                <h3>Demo output</h3>
+                <p id="noteText" class="muted" hidden>
+                    Note: This paragraph was toggled using a button (JS).
+                </p>
+            </section>
+        </section>
+
+        <section id="extras">
+            <h2>Extra tags</h2>
+
+            <p>
+                Inline container tags:
+                <span>span example</span>
+            </p>
+
+            <p>
+                Select text placeholder demo:
+                <code>&lt;template&gt;</code>
+            </p>
+
+            <template id="helloTemplate">
+                <section class="demoTemplate">
+                    <h3>Template content</h3>
+                    <p>
+                        This section comes from a HTML <code>template</code>.
+                    </p>
+                </section>
+            </template>
+
+            <button type="button" onclick="showTemplate()">Insert template</button>
+
+            <p class="muted">
+                Structural example for <code>small</code>, <code>strong</code>, and more is already above.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Footer content.
+            <a href="#text">Back to top</a>
+        </p>
+    </footer>
+
+    <script>
+        // Canvas drawing demo
+        const canvas = document.getElementById( "myCanvas" )
+        if ( canvas && canvas.getContext )
+        {
+            const ctx = canvas.getContext( "2d" )
+            ctx.fillStyle = "#fff"
+            ctx.fillRect( 0, 0, canvas.width, canvas.height )
+            ctx.fillStyle = "#4f46e5"
+            ctx.fillRect( 20, 20, 120, 40 )
+            ctx.fillStyle = "#06b6d4"
+            ctx.fillRect( 160, 20, 120, 40 )
+            ctx.fillStyle = "#10b981"
+            ctx.fillRect( 300, 20, 90, 40 )
+            ctx.strokeStyle = "#111"
+            ctx.strokeRect( 20, 20, 380, 100 )
+            ctx.fillStyle = "#111"
+            ctx.font = "16px Arial"
+            ctx.fillText( "Canvas demo", 30, 95 )
+        }
+
+        // Range output demo
+        const range = document.getElementById( "satisfaction" )
+        const rangeOutput = document.getElementById( "rangeOutput" )
+        if ( range && rangeOutput )
+        {
+            rangeOutput.textContent = range.value
+            range.addEventListener( "input", () =>
+            {
+                rangeOutput.textContent = range.value
+            } )
+        }
+
+        // Toggle note demo
+        function toggleNote ()
+        {
+            const noteText = document.getElementById( "noteText" )
+            if ( !noteText ) return
+            noteText.hidden = !noteText.hidden
+        }
+
+        // Template insertion demo
+        function showTemplate ()
+        {
+            const tpl = document.getElementById( "helloTemplate" )
+            if ( !tpl ) return
+            const fragment = tpl.content.cloneNode( true )
+            const extras = document.getElementById( "extras" )
+            if ( !extras ) return
+            extras.appendChild( fragment )
+        }
+    </script>
+</body>
+
+</html>
