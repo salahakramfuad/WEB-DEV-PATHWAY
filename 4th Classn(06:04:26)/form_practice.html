@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .inline {
+      display: inline-block;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Complete HTML Form</h2>
+
+  <form action="#" method="post">
+
+    <!-- Text -->
+    <label>Full Name</label>
+    <input type="text" name="fullname" required>
+
+    <!-- Email -->
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <!-- Password -->
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <!-- Number -->
+    <label>Age</label>
+    <input type="number" name="age" min="1" max="120">
+
+    <!-- Phone -->
+    <label>Phone</label>
+    <input type="tel" name="phone">
+
+    <!-- URL -->
+    <label>Website</label>
+    <input type="url" name="website">
+
+    <!-- Date -->
+    <label>Date of Birth</label>
+    <input type="date" name="dob">
+
+    <!-- Time -->
+    <label>Preferred Time</label>
+    <input type="time" name="time">
+
+    <!-- Datetime-local -->
+    <label>Appointment</label>
+    <input type="datetime-local" name="appointment">
+
+    <!-- Color -->
+    <label>Favorite Color</label>
+    <input type="color" name="color">
+
+    <!-- Range -->
+    <label>Experience Level</label>
+    <input type="range" name="experience" min="0" max="10">
+
+    <!-- Radio -->
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male" class="inline"> Male
+    <input type="radio" name="gender" value="female" class="inline"> Female
+
+    <!-- Checkbox -->
+    <label>Hobbies</label>
+    <input type="checkbox" name="hobby" value="reading" class="inline"> Reading
+    <input type="checkbox" name="hobby" value="sports" class="inline"> Sports
+    <input type="checkbox" name="hobby" value="coding" class="inline"> Coding
+
+    <!-- File -->
+    <label>Upload Resume</label>
+    <input type="file" name="resume">
+
+    <!-- Select -->
+    <label>Country</label>
+    <select name="country">
+      <option value="">Select</option>
+      <option>Bangladesh</option>
+      <option>USA</option>
+      <option>UK</option>
+    </select>
+
+    <!-- Multiple Select -->
+    <label>Skills</label>
+    <select name="skills" multiple>
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+      <option>Python</option>
+    </select>
+
+    <!-- Textarea -->
+    <label>About You</label>
+    <textarea name="about" rows="4"></textarea>
+
+    <!-- Hidden -->
+    <input type="hidden" name="formId" value="12345">
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+
+    <!-- Reset -->
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+
+</html>
