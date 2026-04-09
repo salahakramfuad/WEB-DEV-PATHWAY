@@ -1,0 +1,45 @@
+.form-box{
+  display:flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+
+  max-width: 360px;
+  height:auto;
+  padding: 20px;
+  border-radius: 5%;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+form{
+  display:flex;
+
+  flex-direction: column;
+  gap: 10px;
+}
+
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(245, 245, 245);
+}
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+button{
+  background-color: green;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
