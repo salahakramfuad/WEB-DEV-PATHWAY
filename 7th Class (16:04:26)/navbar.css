@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: sans;
+}
+
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  background-color: rgb(136, 107, 165);
+  padding: 10px 60px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+ul{
+  display:flex;
+  flex-direction:row;
+  gap: 20px;
+  list-style: none;
+
+
+}
+a{
+ color: black;
+  text-decoration: none;
+}
+main{
+  height: 100vh;
+}
+footer{
+  display:flex;
+  align-items:bottom;
+  justify-content:bottom;
+  background-color: purple;
+  margin-bottom:0;
+  padding:20px;
+}
