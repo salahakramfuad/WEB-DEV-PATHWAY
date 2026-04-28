@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Responsive Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+  class="min-h-screen bg-rose-100 text-slate-800 transition-colors duration-500 sm:bg-amber-100 md:bg-emerald-100 lg:bg-sky-100 xl:bg-violet-100">
+  <header
+    class="bg-rose-600 text-white transition-colors duration-500 sm:bg-amber-600 md:bg-emerald-600 lg:bg-sky-600 xl:bg-violet-600">
+    <div class="mx-auto max-w-4xl px-4 py-4">
+      <h1 class="text-xl font-bold sm:text-2xl">Simple Responsive Demo</h1>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-4 py-8">
+    <div
+      class="mb-6 rounded-lg border-2 border-dashed border-rose-500 bg-white p-4 text-center font-bold text-rose-700 sm:border-amber-500 sm:text-amber-700 md:border-emerald-500 md:text-emerald-700 lg:border-sky-500 lg:text-sky-700 xl:border-violet-500 xl:text-violet-700">
+      <span class="sm:hidden">MOBILE</span>
+      <span class="hidden sm:inline md:hidden">SMALL (sm)</span>
+      <span class="hidden md:inline lg:hidden">MEDIUM (md)</span>
+      <span class="hidden lg:inline xl:hidden">LARGE (lg)</span>
+      <span class="hidden xl:inline">XL</span>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-lg bg-white p-5 shadow">Card 1</div>
+      <div class="rounded-lg bg-white p-5 shadow">Card 2</div>
+      <div class="rounded-lg bg-white p-5 shadow sm:col-span-2 lg:col-span-1">Card 3</div>
+    </div>
+  </main>
+</body>
+
+</html>
